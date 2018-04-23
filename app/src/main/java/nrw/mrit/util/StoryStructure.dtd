@@ -1,0 +1,45 @@
+<!ELEMENT story (character*,(textElement|pictureElement|audioElement)*))>
+<!ATTLIST story
+          title CDATA #REQUIRED
+          author CDATA #REQUIRED
+          datePublished CDATA #REQUIRED
+          openEdit CDATA #IMPLIED>
+    <!ELEMENT character (name,age,stats,relation,pic)>
+        <!ATTLIST character
+                  id CDATA ID #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT stats (stat*)>
+        <!ELEMENT stat (statDescript)>
+        <!ATTLIST stat
+                  name CDATA #REQUIRED
+                  value CDATA #REQUIRED
+                  >
+        <!ELEMENT statDescript (#PCDATA)>
+        <!ELEMENT relation (#PCDATA)>
+        <!ATTLIST relation
+                  characterID CDATA #REQUIRED
+                  relationType CDATA #IMPLIED
+                  relationValue CDATA #IMPLIED>
+        <!ELEMENT pic (picDesc)?>
+        <!ATTLIST pic
+                  path CDATA #REQUIRED>
+        <!ELEMENT picDesc (#PCDATA)>
+    <!ELEMENT textElement (requirement*,#PCDATA,(textElement|pictureElement|audioElement|characterID)*)>
+    <!ATTLIST textElement
+              id CDATA ID #REQUIRED
+              title CDATA #REQUIRED
+              buttonText CDATA #REQUIRED>
+    <!ELEMENT pictureElement (requirement*,#PCDATA,(textElement|pictureElement|audioElement|characterID)*)>
+    <!ATTLIST pictureElement
+        id CDATA ID #REQUIRED
+        title CDATA #REQUIRED
+        buttonText CDATA #REQUIRED>
+    <!ELEMENT audioElement (requirement*,#PCDATA,(textElement|pictureElement|audioElement|characterID)*)>
+    <!ATTLIST audioElement
+        id CDATA ID #REQUIRED
+        title CDATA #REQUIRED
+        buttonText CDATA #REQUIRED>
+    <!ELEMENT requirement (script)>
+    <!ELEMENT script (#PCDATA)>
+    <!ELEMENT characterID (#PCDATA)>

@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Basic Info -->
+    <string name="app_name">StoryPlayer</string>
+
+    <!-- MainScreenStrings -->
+    <string name="playStoryButton">Play local story</string>
+    <string name="createStoryButton">Coming Soon!</string>
+    <string name="browseStoriesButton">Coming Soon!</string>
+
+
+</resources>
