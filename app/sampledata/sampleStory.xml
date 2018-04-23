@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<story title="This is a samle story" author="Mase" datePublished="1.1.1970"
+        openEdit="0">
+    <character id="0">
+        <name>
+            <firstname>Max</firstname>
+            <surname>Mustermann</surname>
+        </name>
+        <age>99</age>
+        <stats>
+            <stat name="programming skillz" value="10">
+                Testcharakterattribut
+            </stat>
+            <stat name="amazing skillz" value="10">
+                Testcharakterattddddribut
+            </stat>
+        </stats>
+        <relation characterID="0" relationType="Self Love" relationValue="9001">
+            Selbstverliebt wie immer
+        </relation>
+        <pic path="./pics/default.jpg">ayyylmao Unterschrift des Testbildes</pic>
+    </character>
+
+
+
+
+
+
+
+</story>

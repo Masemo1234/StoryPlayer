@@ -4,27 +4,27 @@
           author CDATA #REQUIRED
           datePublished CDATA #REQUIRED
           openEdit CDATA #IMPLIED>
-    <!ELEMENT character (name,age,stats,relation,pic)>
+    <!ELEMENT character (name,age,stats,relation*,pic*)>
         <!ATTLIST character
                   id CDATA ID #REQUIRED>
-        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT name (firstname,surname)>
+            <!ELEMENT firstname (#PCDATA)>
+            <!ELEMENT surname (#PCDATA)>
         <!ELEMENT age (#PCDATA)>
         <!ELEMENT stats (stat*)>
-        <!ELEMENT stat (statDescript)>
+        <!ELEMENT stat (#PCDATA)*>
         <!ATTLIST stat
                   name CDATA #REQUIRED
                   value CDATA #REQUIRED
                   >
-        <!ELEMENT statDescript (#PCDATA)>
         <!ELEMENT relation (#PCDATA)>
         <!ATTLIST relation
                   characterID CDATA #REQUIRED
                   relationType CDATA #IMPLIED
                   relationValue CDATA #IMPLIED>
-        <!ELEMENT pic (picDesc)?>
+        <!ELEMENT pic (#PCDATA)?>
         <!ATTLIST pic
                   path CDATA #REQUIRED>
-        <!ELEMENT picDesc (#PCDATA)>
     <!ELEMENT textElement (requirement*,#PCDATA,(textElement|pictureElement|audioElement|characterID)*)>
     <!ATTLIST textElement
               id CDATA ID #REQUIRED

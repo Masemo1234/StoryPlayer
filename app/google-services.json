@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "94030055066",
+    "firebase_url": "https://storyplayer-ba989.firebaseio.com",
+    "project_id": "storyplayer-ba989",
+    "storage_bucket": "storyplayer-ba989.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94030055066:android:a01f4b9219aa24d3",
+        "android_client_info": {
+          "package_name": "nrw.mrit.storyplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94030055066-etbres73f19odgr7hjfpphruqol6q3vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nrw.mrit.storyplayer",
+            "certificate_hash": "7be2c20a70a34bc7d281062e655968bf4d08e446"
+          }
+        },
+        {
+          "client_id": "94030055066-grutau9thaah4q4oh1iqhnm9udjjicvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzpgCQgVkb7IeTFpoHQThg60Oy_i8YdrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94030055066-grutau9thaah4q4oh1iqhnm9udjjicvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
